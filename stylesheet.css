@@ -1,0 +1,71 @@
+body {
+  color: white;
+  background-color: black;
+  font-size: 18px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+#gameTable {
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: 2px solid white;
+  border: none;
+}
+
+#gameTable td {
+  border: 2px solid white;
+  padding: 10px;
+  height: 150px;
+  width: 150px;
+  text-align: center;
+}
+
+#gameTable tr:first-child td {
+  border-top: none;
+}
+#gameTable tr:last-child td {
+  border-bottom: none;
+}
+
+#gameTable td:first-child {
+  border-left: none;
+}
+
+#gameTable td:last-child {
+  border-right: none;
+}
+
+#h1heading {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 120px;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+#turn-msg {
+  border: 2px solid snow;
+  display: inline-block;
+  padding: 0.5%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
